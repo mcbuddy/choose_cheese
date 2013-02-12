@@ -1,7 +1,8 @@
 ChooseCheese::Application.routes.draw do
 
-  root :to =>"pages#home"
-  get "about" => "page#about"
+  root :to =>'pages#home'
+
+  get 'about'=>'pages#about'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
