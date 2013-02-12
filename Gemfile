@@ -9,7 +9,7 @@ gem 'simple_form'
 gem 'aws-s3'
 gem "aws-sdk"
 gem 'nokogiri'
-
+gem 'sass-rails',   '~> 3.2.3'
 
 group :production do
   gem 'pg'
@@ -20,7 +20,6 @@ group :development, :test do
 end
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'paperclip'
   gem 'uglifier', '>= 1.0.3'
