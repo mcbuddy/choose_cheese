@@ -15,7 +15,7 @@ ChooseCheese::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = true
+  config.assets.compile = false
 
   # Generate digests for assets URLs
   config.assets.digest = true
@@ -70,5 +70,4 @@ ChooseCheese::Application.configure do
 
   #required devise gem rn on heroku
   config.assets.initialize_on_precompile = false
-
 end
