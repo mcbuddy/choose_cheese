@@ -1,0 +1,45 @@
+<%= simple_form_for(@cheese, :html=>{class:"form-horizontal"}) do |f| %>
+  <% if @cheese.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cheese.errors.count, "error") %> prohibited this cheese from being saved:</h2>
+
+      <ul>
+      <% @cheese.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cheese_name %>
+    <%= f.text_field :cheese_name %>
+  </div>
+  <div class="field">
+    <%= f.label :cheese_description %>
+    <%= f.text_field :cheese_description %>
+  </div>
+  <div class="field">
+    <%= f.label :origin_country %>
+    <%= f.text_field :origin_country %>
+  </div>
+  <div class="field">
+    <%= f.label :milk_type %>
+    <%= f.text_field :milk_type %>
+  </div>
+  <div class="field">
+    <%= f.label :texture %>
+    <%= f.text_field :texture %>
+  </div>
+  <div class="field">
+    <%= f.label :taste %>
+    <%= f.text_field :taste %>
+  </div>
+  <div class="field">
+    <%= f.label :pasteurized %>
+    <%= f.check_box :pasteurized %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

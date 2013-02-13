@@ -1,0 +1,38 @@
+<h1>Listing cheeses</h1>
+
+<table class="table table-striped">
+  <thead>
+      <tr>
+        <th>Cheese name</th>
+        <th>Cheese description</th>
+        <th>Origin country</th>
+        <th>Milk type</th>
+        <th>Texture</th>
+        <th>Taste</th>
+        <th>Pasteurized</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+  </thead>
+  <tbody>
+    <% @cheeses.each do |cheese| %>
+      <tr>
+        <td><%= cheese.cheese_name %></td>
+        <td><%= cheese.cheese_description %></td>
+        <td><%= cheese.origin_country %></td>
+        <td><%= cheese.milk_type %></td>
+        <td><%= cheese.texture %></td>
+        <td><%= cheese.taste %></td>
+        <td><%= cheese.pasteurized %></td>
+        <td><%= link_to 'Show', cheese %></td>
+        <td><%= link_to 'Edit', edit_cheese_path(cheese) %></td>
+        <td><%= link_to 'Destroy', cheese, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Cheese', new_cheese_path %>

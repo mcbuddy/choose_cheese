@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cheese name:</b>
+  <%= @cheese.cheese_name %>
+</p>
+
+<p>
+  <b>Cheese description:</b>
+  <%= @cheese.cheese_description %>
+</p>
+
+<p>
+  <b>Origin country:</b>
+  <%= @cheese.origin_country %>
+</p>
+
+<p>
+  <b>Milk type:</b>
+  <%= @cheese.milk_type %>
+</p>
+
+<p>
+  <b>Texture:</b>
+  <%= @cheese.texture %>
+</p>
+
+<p>
+  <b>Taste:</b>
+  <%= @cheese.taste %>
+</p>
+
+<p>
+  <b>Pasteurized:</b>
+  <%= @cheese.pasteurized %>
+</p>
+
+
+<%= link_to 'Edit', edit_cheese_path(@cheese) %> |
+<%= link_to 'Back', cheeses_path %>

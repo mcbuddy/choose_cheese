@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cheese_name: MyString
+  cheese_description: MyString
+  origin_country: MyString
+  milk_type: MyString
+  texture: MyString
+  taste: MyString
+  pasteurized: false
+
+two:
+  cheese_name: MyString
+  cheese_description: MyString
+  origin_country: MyString
+  milk_type: MyString
+  texture: MyString
+  taste: MyString
+  pasteurized: false
