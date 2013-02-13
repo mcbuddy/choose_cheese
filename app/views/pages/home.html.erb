@@ -9,7 +9,9 @@
       application.
     <h3>This Website still under construction</h3>
     </p>
-    <p>
-      <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large btn-custom" %>
-    </p>
+    <% if user_signed_in? %>
+      <p><%= link_to "Search Your Cheese!", "#", class: "btn btn-primary btn-large btn-custom" %></p>
+    <% else %>
+      <p><%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large btn-custom" %></p>
+    <% end %>
 </div>
