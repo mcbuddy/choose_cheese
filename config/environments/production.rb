@@ -70,5 +70,4 @@ ChooseCheese::Application.configure do
 
   #required devise gem rn on heroku
   config.assets.initialize_on_precompile = false
-
 end
