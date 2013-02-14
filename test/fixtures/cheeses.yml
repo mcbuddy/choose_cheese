@@ -4,8 +4,8 @@ one:
   cheese_name: MyString
   cheese_description: MyString
   origin_country: MyString
-  milk_type: MyString
   texture: MyString
+  milk_type: MyString
   taste: MyString
   pasteurized: false
 
@@ -13,7 +13,7 @@ two:
   cheese_name: MyString
   cheese_description: MyString
   origin_country: MyString
-  milk_type: MyString
   texture: MyString
+  milk_type: MyString
   taste: MyString
   pasteurized: false

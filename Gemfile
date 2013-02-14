@@ -9,7 +9,7 @@ gem 'simple_form'
 gem 'aws-s3'
 gem "aws-sdk"
 gem 'nokogiri'
-
+gem 'country_select'
 
 group :production do
   gem 'pg'
