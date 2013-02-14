@@ -5,4 +5,4 @@ Hope you guys enjoy!
 
 GitHub: https://github.com/mcbuddy/choose_cheese
 
-Heroku: http://agile-waters-1371.herokuapp.com/
+Heroku: http://choose-cheese.herokuapp.com
