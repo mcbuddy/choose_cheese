@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130213012549) do
+ActiveRecord::Schema.define(:version => 20130213032622) do
+
+  create_table "cheeses", :force => true do |t|
+    t.string   "cheese_name"
+    t.string   "cheese_description"
+    t.string   "origin_country"
+    t.string   "milk_type"
+    t.string   "texture"
+    t.string   "taste"
+    t.boolean  "pasteurized"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
