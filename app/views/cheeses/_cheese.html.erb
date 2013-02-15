@@ -1,0 +1,12 @@
+<tr>
+    <td><%= cheese.cheese_name %></td>
+    <td><%= cheese.cheese_description %></td>
+    <td><%= cheese.origin_country %></td>
+    <td><%= cheese.texture %></td>
+    <td><%= cheese.milk_type %></td>
+    <td><%= cheese.taste %></td>
+    <td><%= cheese.pasteurized %></td>
+    <td><%= link_to 'Show', cheese %></td>
+    <td><%= link_to 'Edit', edit_cheese_path(cheese) %></td>
+    <td><%= link_to 'Destroy', cheese, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>

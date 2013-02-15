@@ -3,7 +3,7 @@
 
   <div class="form-inputs">
     <%= f.input :cheese_name %>
-    <%= f.input :cheese_description %>
+    <%= f.input :cheese_description, as: :text, input_html:{rows:"3" } %>
     <%= f.input :origin_country %>
     <%= f.input :texture %>
     <%= f.input :milk_type %>
