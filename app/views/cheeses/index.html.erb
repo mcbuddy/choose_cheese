@@ -1,10 +1,13 @@
 <h1>Listing cheeses</h1>
 
+<% if user_signed_in? %>
 <%= link_to 'Add New Cheese', new_cheese_path, class:"btn btn-primary btn-custom" %>
+<% end %>
 
 <table class="table table-striped">
 <thead>
   <tr>
+    <th>Cheese Image</th>
     <th>Cheese name</th>
     <th>Cheese description</th>
     <th>Origin country</th>

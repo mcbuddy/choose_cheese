@@ -36,6 +36,10 @@
           <%= @cheese.pasteurized %>
         </p>
 
+        <p>
+          <%= image_tag @cheese.image.url(:medium)  %>
+        </p>
+
         <%= link_to 'Edit', edit_cheese_path(@cheese) %> |
         <%= link_to 'Back', cheeses_path %>
 
