@@ -154,7 +154,7 @@ DEPENDENCIES
   devise
   jquery-rails
   nokogiri
-  paperclip
+  paperclip (~> 3.0)
   pg
   rails (= 3.2.11)
   sass-rails (~> 3.2.3)
