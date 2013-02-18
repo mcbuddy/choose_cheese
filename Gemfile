@@ -15,10 +15,10 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'paperclip'
   gem 'uglifier', '>= 1.0.3'
-  gem 'paperclip'
   gem 'bootstrap-sass', '~> 2.2.2.0'
 end
 
+gem 'paperclip', "~> 3.0"
 gem 'bcrypt-ruby'
 gem 'jquery-rails'
 gem 'therubyracer'
