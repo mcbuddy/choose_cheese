@@ -5,4 +5,9 @@ class Cheese < ActiveRecord::Base
   validates_attachment :image, presence: true, content_type: {content_type: ['image/jpg', 'image/jpeg', 'image/png', 'image/gif']}, size: {less_than: 3.megabytes}
 
   has_attached_file :image , :styles => { :medium => "400x300>", :thumb => "100x100>" }
+
+  searchable do
+  	text :cheese_name
+  	text :cheese_description
+  end
 end
