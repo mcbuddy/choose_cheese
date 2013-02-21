@@ -2,7 +2,11 @@ class CheesesController < ApplicationController
   # GET /cheeses
   # GET /cheeses.json
   def index
-    @cheeses = Cheese.all
+    @search = Cheese.search do
+      fulltext params[:search]
+    end
+    @cheeses = @search.results
+    #@cheeses = Cheese.all
 
     respond_to do |format|
       format.html # index.html.erb

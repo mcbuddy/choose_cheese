@@ -8,6 +8,7 @@ end
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'sunspot_solr'
 end
 
 group :assets do

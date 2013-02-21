@@ -9,5 +9,9 @@ class Cheese < ActiveRecord::Base
   searchable do
   	text :cheese_name
   	text :cheese_description
+    text :origin_country
+    text :milk_type
+    text :taste
+    text :texture
   end
 end
