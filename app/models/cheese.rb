@@ -10,4 +10,5 @@ class Cheese < ActiveRecord::Base
   	text :cheese_name
   	text :cheese_description
   end
+
 end
