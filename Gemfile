@@ -8,7 +8,6 @@ end
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'sunspot_solr'
 end
 
 group :assets do
@@ -18,7 +17,7 @@ group :assets do
   gem 'bootstrap-sass', '~> 2.2.2.0'
 end
 
-gem 'sunspot_rails'
+gem 'texticle', :require => 'texticle/rails'
 gem 'paperclip', "~> 3.0"
 gem 'bcrypt-ruby'
 gem 'jquery-rails'
