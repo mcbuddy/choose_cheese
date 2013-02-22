@@ -2,7 +2,7 @@ ChooseCheese::Application.routes.draw do
 
   resources :cheeses
 
-  match 'users/sign_up' => redirect('pages#home')
+  match 'users/sign_up' => redirect('/404.html')
 
   devise_for :users
       
