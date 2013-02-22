@@ -25,7 +25,7 @@ gem 'therubyracer'
 gem 'devise'
 gem 'simple_form'
 gem 'aws-s3'
-gem "aws-sdk"
+gem 'aws-sdk'
 gem 'nokogiri'
 gem 'country_select'
 gem 'cancan'
