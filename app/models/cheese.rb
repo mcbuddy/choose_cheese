@@ -6,10 +6,5 @@ class Cheese < ActiveRecord::Base
 
   has_attached_file :image , :styles => { :medium => "400x300>", :thumb => "100x100>" }
 
-  searchable do
-  	text :cheese_name
-  	text :cheese_description
-    text :milk_type
-  end
 
 end
