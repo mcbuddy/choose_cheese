@@ -2,17 +2,12 @@ ChooseCheese::Application.routes.draw do
 
   resources :cheeses
 
-  devise_for :users, :controllers => {:registrations => "registrations"}, :skip => [:registrations]
+  devise_for :users, :skip => [:registrations] 
   as :user do
-    get 'users/edit' => 'devise/registrations#edit', :as => 'edit_user_registration'
-    put 'users' => 'devise/registrations#update', :as => 'user_registration'
+      get 'users/edit' => 'devise/registrations#edit', :as => 'edit_user_registration'
+      put 'users' => 'devise/registrations#update', :as => 'user_registration'
   end
-
-  devise_scope :user do
-    get "/sign_in",  :to => "devise/sessions#new"
-    get "/sign_up",  :to => "devise/registrations#new"
-  end
-
+      
   root :to =>'pages#home'
 
   get 'about'=>'pages#about'
