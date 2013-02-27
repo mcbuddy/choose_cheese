@@ -17,7 +17,8 @@ group :assets do
   gem 'bootstrap-sass', '~> 2.2.2.0'
 end
 
-gem 'texticle', :require => 'texticle/rails'
+#gem 'pg_search'
+#gem 'texticle', :require => 'texticle/rails'
 gem 'paperclip', "~> 3.0"
 gem 'bcrypt-ruby'
 gem 'jquery-rails'
