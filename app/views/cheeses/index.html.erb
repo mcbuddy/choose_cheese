@@ -1,10 +1,8 @@
 <h1>Listing cheeses</h1>
-<% if user_signed_in? %>
-    <%= link_to 'Add New Cheese', new_cheese_path, class:"btn btn-primary btn-custom" %>
-<%	end  %>
 
-<%= form_tag cheeses_path, :method => 'get' do %>
+<%= form_tag cheeses_path, class:"breadcrumb" ,:method => 'get' do %>
 	<p>
+	  Search your cheese here :
      <%= text_field_tag :search, params[:search] %>
      <%= submit_tag "Search", :name => nil, class:"btn btn-primary btn-custom"  %>
    </p>
@@ -14,6 +12,7 @@
 <table class="table table-striped">
 <thead>
   <tr>
+    <th>Cheese image</th>
     <th>Cheese name</th>
     <th>Cheese description</th>
     <th>Origin country</th>
@@ -39,11 +38,16 @@
 		  <td><%= cheese.taste %></td>
 		  <td><%= cheese.pasteurized %></td>
 		  <td><%= link_to 'Show', cheese %></td>
-		  <td><%= link_to 'Edit', edit_cheese_path(cheese) %></td>
-		  <td><%= link_to 'Destroy', cheese, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		  <% if user_signed_in? %>
+			  <td><%= link_to 'Edit', edit_cheese_path(cheese) %></td>
+			  <td><%= link_to 'Destroy', cheese, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		  <% end %>
 		</tr>
 <% end %>
 </tbody>
+  <% if user_signed_in? %>
+      <%= link_to 'Add New Cheese', new_cheese_path, class:"btn btn-primary btn-custom" %>
+  <%	end  %>
 </table>
 
 <br />

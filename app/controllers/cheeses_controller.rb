@@ -1,4 +1,5 @@
 class CheesesController < ApplicationController
+  before_filter :authenticate_user! , :except => [:gallery , :index, :show]
 
   # GET /gallery
   def gallery
@@ -92,4 +93,8 @@ class CheesesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  #def check_access
+  #  redirect_to root_path unless user_signed_in
+  #end
 end
