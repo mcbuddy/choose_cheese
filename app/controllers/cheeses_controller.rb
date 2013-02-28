@@ -1,4 +1,15 @@
 class CheesesController < ApplicationController
+
+  # GET /gallery
+  def gallery
+    @cheeses = Cheese.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @cheeses }
+    end
+  end
+
   # GET /cheeses
   # GET /cheeses.json
   def index

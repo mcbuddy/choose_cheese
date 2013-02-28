@@ -2,6 +2,8 @@ ChooseCheese::Application.routes.draw do
 
   resources :cheeses
 
+  get 'gallery' => 'cheese#gallery'
+
   match 'users/sign_up' => redirect('/404.html')
 
   devise_for :users
@@ -9,6 +11,8 @@ ChooseCheese::Application.routes.draw do
   root :to =>'pages#home'
 
   get 'about'=>'pages#about'
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
