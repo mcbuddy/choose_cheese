@@ -7,9 +7,11 @@ class Cheese < ActiveRecord::Base
 
   has_attached_file :image , :styles => { :medium => "400x300>", :thumb => "100x100>" }
 
+  #scope :search, lambda{|search| where("cheese_name: LIKE ?", "%#{search}%")}
+
   def self.search(search)
     if search
-      find(:all, :conditions => ['cheese_name LIKE ?', "%#{search}%"] )
+      find(:all, :conditions => ['cheese_name ILIKE ?', "%#{search}%"] )
     else
       find(:all)
     end
