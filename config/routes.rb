@@ -1,8 +1,11 @@
 ChooseCheese::Application.routes.draw do
 
-  resources :cheeses
+  resources :cheeses do
 
-  get 'gallery' => 'cheese#gallery'
+  end
+
+
+  get 'gallery' => 'cheeses#gallery'
 
   match 'users/sign_up' => redirect('/404.html')
 

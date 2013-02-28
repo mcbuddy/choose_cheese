@@ -6,13 +6,13 @@
     <%= f.input :cheese_description, as: :text, input_html:{rows:"3" } %>
     <%= f.input :origin_country %>
     <%= f.input :texture %>
-    <%= f.input :milk_type, label:"Milk Type" %>
+    <%= f.input :milk_type, collection: ["Cow's Milk", "Sheep's Milk", "Goat's Milk", "Mixed Milk"], label: "Milk Type" %>
     <%= f.input :taste %>
     <%= f.input :pasteurized %>
     <%= f.input :image, label: "Upload Image" %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit , class:"btn btn-primary btn-custom" %>
   </div>
 <% end %>

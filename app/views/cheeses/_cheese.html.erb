@@ -1,13 +1,6 @@
-<tr>
-    <td><%= image_tag cheese.image.url(:thumb)%>
-    <td><%= cheese.cheese_name %></td>
-    <td><%= cheese.cheese_description %></td>
-    <td><%= cheese.origin_country %></td>
-    <td><%= cheese.texture %></td>
-    <td><%= cheese.milk_type %></td>
-    <td><%= cheese.taste %></td>
-    <td><%= cheese.pasteurized %></td>
-    <td><%= link_to 'Show', cheese %></td>
-    <td><%= link_to 'Edit', edit_cheese_path(cheese) %></td>
-    <td><%= link_to 'Destroy', cheese, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-</tr>
+<div class="box">
+    <tr><%= image_tag cheese.image.url(:thumb)%></tr>
+    <tr><h4><%= cheese.cheese_name %></h4></tr>
+    <tr>(<%= cheese.origin_country %>)</tr>
+</div>
+
