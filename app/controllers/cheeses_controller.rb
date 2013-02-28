@@ -13,7 +13,9 @@ class CheesesController < ApplicationController
   # GET /cheeses
   # GET /cheeses.json
   def index
-    @cheeses = Cheese.all
+    @cheeses = Cheese.search(params[:search])
+
+    #@cheeses = Cheese.all
 
     respond_to do |format|
       format.html # index.html.erb

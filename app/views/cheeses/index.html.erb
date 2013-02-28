@@ -3,6 +3,13 @@
     <%= link_to 'Add New Cheese', new_cheese_path, class:"btn btn-primary btn-custom" %>
 <%	end  %>
 
+   <p>
+     <%= text_field_tag :search, params[:search] %>
+     <%= submit_tag "Search", :name => nil  %>
+   </p>
+
+
+<p></p>
 <table class="table table-striped">
 <thead>
   <tr>

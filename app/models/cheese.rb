@@ -1,4 +1,5 @@
 class Cheese < ActiveRecord::Base
+
   attr_accessible :image, :cheese_description, :cheese_name, :milk_type, :origin_country, :pasteurized, :taste, :texture
 
   validates_presence_of :cheese_name, :origin_country, :milk_type, :pasteurized, :taste, :texture
@@ -6,5 +7,12 @@ class Cheese < ActiveRecord::Base
 
   has_attached_file :image , :styles => { :medium => "400x300>", :thumb => "100x100>" }
 
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['name LIKE ?', "%#{search}%"] )
+    else
+      find(:all)
+    end
+  end
 
 end
