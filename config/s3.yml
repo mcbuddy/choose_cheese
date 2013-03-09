@@ -1,0 +1,1 @@
+development:  bucket: choose-cheese  access_key_id: AKIAJNX7NU5KRQDCEDOQ  secret_access_key: qM32eiQrx37J9SHxIUof1sI8AwPHLa90sb9rS0dBproduction:    bucket: choose-cheese    access_key_id: AKIAJNX7NU5KRQDCEDOQ    secret_access_key: qM32eiQrx37J9SHxIUof1sI8AwPHLa90sb9rS0dB
