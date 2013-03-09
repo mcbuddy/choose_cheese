@@ -21,3 +21,4 @@ doc/*
 
 #Ignore Paperclip Uploaded files
 /public/system
+/config/s3.yml
