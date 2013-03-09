@@ -1,9 +1,6 @@
 ChooseCheese::Application.routes.draw do
 
-  resources :cheeses do
-
-  end
-
+  resources :cheeses
 
   get 'gallery' => 'cheeses#gallery'
 

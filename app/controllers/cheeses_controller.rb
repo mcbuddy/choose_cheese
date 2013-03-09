@@ -58,10 +58,10 @@ class CheesesController < ApplicationController
     respond_to do |format|
       if @cheese.save
         format.html { redirect_to @cheese, notice: 'Cheese was successfully created.' }
-        format.json { render json: @cheese, status: :created, location: @cheese }
+        #format.json { render json: @cheese, status: :created, location: @cheese }
       else
         format.html { render action: "new" }
-        format.json { render json: @cheese.errors, status: :unprocessable_entity }
+        #format.json { render json: @cheese.errors, status: :unprocessable_entity }
       end
     end
   end
