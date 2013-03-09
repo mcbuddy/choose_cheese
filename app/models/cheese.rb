@@ -11,7 +11,7 @@ class Cheese < ActiveRecord::Base
       :path => "assets/:class/:attachment/:id/:style.:extension",
       #:path => ":attachment/activities/:id/:style.:extension",
       :s3_permissions => 'public_read',
-      :s3_protocol => 'http',
+      #:s3_protocol => 'http',
       :bucket => 'choose-cheese'
 
 
