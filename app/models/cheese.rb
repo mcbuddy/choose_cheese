@@ -8,8 +8,7 @@ class Cheese < ActiveRecord::Base
   has_attached_file :image , :styles => { :medium => "400x300>", :thumb => "100x100>" },
       :storage => :s3,
       :s3_credentials => "#{Rails.root}/config/s3.yml",
-      :path => "assets/:class/:attachment/:id/:style.:extension",
-      #:path => ":attachment/activities/:id/:style.:extension",
+      :path => "assets/:images/:attachment/:style.:extension",
       :s3_permissions => 'public_read',
       #:s3_protocol => 'http',
       :bucket => 'choose-cheese'
