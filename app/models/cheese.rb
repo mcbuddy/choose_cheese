@@ -5,13 +5,8 @@ class Cheese < ActiveRecord::Base
   validates_presence_of :cheese_name, :origin_country, :milk_type, :taste, :texture
   validates_attachment :image, presence: true, content_type: {content_type: ['image/jpg', 'image/jpeg', 'image/png', 'image/gif']}, size: {less_than: 3.megabytes}
 
-  has_attached_file :image , :styles => { :medium => "400x300>", :thumb => "100x100>" },
-      :storage => :s3,
-      :s3_credentials => "#{Rails.root}/config/s3.yml",
-      :path => "assets/images/attachment/:style.:extension",
-      :s3_permissions => 'public_read',
-      #:s3_protocol => 'http',
-      :bucket => 'choose-cheese'
+  has_attached_file :image , :styles => { :medium => "400x300>", :thumb => "100x100>" }, :storage => :s3
+
 
 
   #scope :search, lambda{|search| where("cheese_name: LIKE ?", "%#{search}%")}

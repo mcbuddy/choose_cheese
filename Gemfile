@@ -1,14 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
-
-group :production do
-  gem 'pg'
-end
-
-group :development, :test do
-  gem 'sqlite3'
-end
+gem 'pg'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -17,9 +10,9 @@ group :assets do
   gem 'bootstrap-sass', '~> 2.2.2.0'
 end
 
-#gem 'pg_search'
-#gem 'texticle', :require => 'texticle/rails'
+gem 'textacular'
 gem 'paperclip', "~> 3.0"
+gem 'rmagick'
 gem 'bcrypt-ruby'
 gem 'jquery-rails'
 gem 'therubyracer'
@@ -30,3 +23,4 @@ gem 'aws-sdk'
 gem 'nokogiri'
 gem 'country_select'
 gem 'cancan'
+gem 'figaro'

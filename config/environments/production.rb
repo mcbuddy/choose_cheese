@@ -70,4 +70,13 @@ ChooseCheese::Application.configure do
 
   #required devise gem rn on heroku
   config.assets.initialize_on_precompile = false
+
+  config.paperclip_defaults = {
+      :storage => :s3,
+      :s3_credentials => {
+          :bucket => ENV['AWS_BUCKET'],
+          :access_key_id => ENV['AWS_ACCESS_ID'],
+          :secret_access_key => ENV['AWS_SECRET_ID']
+      }
+  }
 end

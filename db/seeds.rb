@@ -7,9 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 userBudi = User.create(name:'Budi', email:'budi@example.com', password:'12345678', password_confirmation:'12345678')
-userKaye = User.create(name:'Kaye Han', email:'kaye@example.com', password:'12345678', password_confirmation:'12345678')
-userDanny = User.create(name:'Daniel Han', email:'daniel@example.com', password:'12345678', password_confirmation:'12345678')
-userKevin = User.create(name:'Kevin Kim', email:'kevin@example.com', password:'12345678', password_confirmation:'12345678')
 
 # ch1 = Cheese.create(cheese_description: '', cheese_name: 'Manchego', milk_type:'Sheep Milk', origin_country: 'Spain', pasteurized: true, taste:'Mild', texture:'Semi-Hard')
 # ch2 = Cheese.create(cheese_description: '', cheese_name: 'Brie', milk_type:'Cow Milk', origin_country: 'French', pasteurized: true, taste:'Mild', texture:'Soft')
