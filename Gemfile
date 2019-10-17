@@ -11,7 +11,7 @@ group :assets do
 end
 
 gem 'textacular'
-gem 'paperclip', "~> 3.0"
+gem 'paperclip', "~> 4.3"
 gem 'rmagick'
 gem 'bcrypt-ruby'
 gem 'jquery-rails'
